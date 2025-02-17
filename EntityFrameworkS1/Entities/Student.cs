@@ -13,6 +13,9 @@ namespace EntityFrameworkS1.Entities
 		public string LName { get; set; }
 		public string Address { get; set; }
 		public int Age { get; set; }
-		public int Dep_Id { get; set; }
+		public int DepartmentID { get; set; }
+		public Department Dep_Id { get; set; }
+
+		public ICollection<StudentCourse> StudentCourses { get; set; }
 	}
 }

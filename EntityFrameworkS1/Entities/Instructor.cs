@@ -14,7 +14,9 @@ namespace EntityFrameworkS1.Entities
 		public int Salary { get; set; }
 		public string Address { get; set; }
 		public int HourRate { get; set; }
-		public int Dep_Id { get; set; }
+		public Department Dep_Id { get; set; }
+		//public int DepartmentID { get; set; }
+		public ICollection<CourseInstructor> CourseInstructors { get; set; }
 
 
 

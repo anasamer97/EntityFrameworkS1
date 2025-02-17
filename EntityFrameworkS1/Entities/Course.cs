@@ -10,8 +10,11 @@ namespace EntityFrameworkS1.Entities
 	{
 		public int Id { get; set; }
 		public int Duration { get; set; }
+
 		public string Name { get; set; }
 		public string Descripition { get; set; }
-		public int Top_ID { get; set; }
+		public Topic Top_ID { get; set; }
+		public CourseInstructor CourseInstructor { get; set; }
+
 	}
 }
